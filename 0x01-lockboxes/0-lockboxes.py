@@ -2,6 +2,8 @@
 '''
 Lockboxes
 '''
+
+
 def canUnlockAll(boxes):
     '''
     Function definition
