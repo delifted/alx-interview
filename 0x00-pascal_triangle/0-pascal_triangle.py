@@ -4,7 +4,7 @@ Pascal's Triangle: Programming solution in python
 '''
 
 
-def pascal_triangle(n: int) -> list[list[int]]:
+def pascal_triangle(n):
     '''
     Function for the triangle
     '''
