@@ -1,21 +1,22 @@
 #!/usr/bin/python3
-'''
+"""
 N queens challenge
-'''
+"""
 import sys
 
 
 def is_safe(board, row, col):
-    '''
-    Check if the current position is under attack by any previous
-    queens
-    '''
+    """
+    Check if the current position is under attack by any
+    previous queens
+    """
+
     # Check the row on the left side
     for i in range(col):
         if board[row][i] == 1:
             return False
-    
-    # Check the super diagonal on the left side
+
+    # Check the upper diagonal on the left side
     i = row
     j = col
     while i >= 0 and j >= 0:
@@ -23,7 +24,7 @@ def is_safe(board, row, col):
             return False
         i -= 1
         j -= 1
-    
+
     # Check the lower diagonal on the left side
     i = row
     j = col
